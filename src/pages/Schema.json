@@ -1,0 +1,948 @@
+{
+  "version": "1.0.0",
+  "componentsMap": [
+    {
+      "package": "@alilc/lowcode-materials",
+      "version": "1.0.3",
+      "exportName": "Button",
+      "main": "build/antd-lowcode/view.js",
+      "destructuring": true,
+      "componentName": "Button"
+    },
+    {
+      "package": "@alilc/lowcode-materials",
+      "version": "1.0.3",
+      "exportName": "Space",
+      "main": "build/antd-lowcode/view.js",
+      "destructuring": true,
+      "componentName": "Space"
+    },
+    {
+      "package": "@alilc/lowcode-materials",
+      "version": "1.0.3",
+      "exportName": "Card",
+      "main": "build/antd-lowcode/view.js",
+      "destructuring": true,
+      "componentName": "Card"
+    },
+    {
+      "package": "@alilc/lowcode-materials",
+      "version": "1.0.3",
+      "exportName": "Tree",
+      "main": "build/antd-lowcode/view.js",
+      "destructuring": true,
+      "componentName": "Tree"
+    },
+    {
+      "package": "@alilc/lowcode-materials",
+      "version": "1.0.3",
+      "exportName": "Tabs",
+      "main": "build/antd-lowcode/view.js",
+      "destructuring": true,
+      "subName": "TabPane",
+      "componentName": "Tabs.TabPane"
+    },
+    {
+      "package": "@alilc/lowcode-materials",
+      "version": "1.0.3",
+      "exportName": "Tabs",
+      "main": "build/antd-lowcode/view.js",
+      "destructuring": true,
+      "componentName": "Tabs"
+    },
+    {
+      "package": "@alilc/lowcode-materials",
+      "version": "1.0.3",
+      "exportName": "Col",
+      "main": "build/antd-lowcode/view.js",
+      "destructuring": true,
+      "componentName": "Col"
+    },
+    {
+      "package": "@alilc/lowcode-materials",
+      "version": "1.0.3",
+      "exportName": "Input",
+      "main": "build/antd-lowcode/view.js",
+      "destructuring": true,
+      "componentName": "Input"
+    },
+    {
+      "package": "@alilc/lowcode-materials",
+      "version": "1.0.3",
+      "exportName": "Form",
+      "main": "build/antd-lowcode/view.js",
+      "destructuring": true,
+      "subName": "Item",
+      "componentName": "Form.Item"
+    },
+    {
+      "package": "@alilc/lowcode-materials",
+      "version": "1.0.3",
+      "exportName": "Select",
+      "main": "build/antd-lowcode/view.js",
+      "destructuring": true,
+      "componentName": "Select"
+    },
+    {
+      "package": "@alilc/lowcode-materials",
+      "version": "1.0.3",
+      "exportName": "Row",
+      "main": "build/antd-lowcode/view.js",
+      "destructuring": true,
+      "componentName": "Row"
+    },
+    {
+      "package": "@alilc/lowcode-materials",
+      "version": "1.0.3",
+      "exportName": "DatePicker",
+      "main": "build/antd-lowcode/view.js",
+      "destructuring": true,
+      "subName": "RangePicker",
+      "componentName": "DatePicker.RangePicker"
+    },
+    {
+      "package": "@alilc/lowcode-materials",
+      "version": "1.0.3",
+      "exportName": "Form",
+      "main": "build/antd-lowcode/view.js",
+      "destructuring": true,
+      "componentName": "Form"
+    },
+    {
+      "package": "@alilc/lowcode-materials",
+      "version": "1.0.3",
+      "exportName": "Table",
+      "main": "build/antd-lowcode/view.js",
+      "destructuring": true,
+      "componentName": "Table"
+    },
+    { "devMode": "lowCode", "componentName": "Page" }
+  ],
+  "componentsTree": [
+    {
+      "componentName": "Page",
+      "id": "node_dockcviv8fo1",
+      "props": {},
+      "fileName": "sample",
+      "state": {
+        "formData": {
+          "type": "JSExpression",
+          "value": "{\n  code: '22',\n  name: '44',\n  sex: 1,\n  timer: [2],\n  brand: 2,\n  category: ['zhejiang', 'hangzhou', 'xihu'],\n  date: new Date(),\n  time: moment('12:08:23', 'HH:mm:ss')\n}"
+        },
+        "brandList": {
+          "type": "JSExpression",
+          "value": "[{\n  value: 1,\n  label: 'AAA'\n}, {\n  value: 2,\n  label: 'BBB'\n}, {\n  value: 3,\n  label: 'CCC'\n}, {\n  value: 4,\n  label: 'DDD'\n}]"
+        },
+        "timerList": {
+          "type": "JSExpression",
+          "value": "[{\n  value: 1,\n  label: '每天'\n}, {\n  value: 2,\n  label: '每周'\n}, {\n  value: 3,\n  label: '每月'\n}, {\n  value: 4,\n  label: '每年'\n}]"
+        },
+        "sexList": {
+          "type": "JSExpression",
+          "value": "[{\n  value: 1,\n  label: '男'\n}, {\n  value: 2,\n  label: '女'\n}]"
+        },
+        "options": {
+          "type": "JSExpression",
+          "value": "[{\n  value: 'zhejiang',\n  label: 'Zhejiang',\n  children: [{\n    value: 'hangzhou',\n    label: 'Hangzhou',\n    children: [{\n      value: 'xihu',\n      label: 'West Lake'\n    }]\n  }]\n}, {\n  value: 'jiangsu',\n  label: 'Jiangsu',\n  children: [{\n    value: 'nanjing',\n    label: 'Nanjing',\n    children: [{\n      value: 'zhonghuamen',\n      label: 'Zhong Hua Men'\n    }]\n  }]\n}]"
+        }
+      },
+      "methods": {
+        "testFunc": {
+          "type": "JSFunction",
+          "value": "function testFunc() {\n  console.log('test aliLowcode func');\n  return /*#__PURE__*/React.createElement(\"div\", {\n    className: \"test-aliLowcode-func\"\n  }, this.state.test);\n}"
+        },
+        "onSearch": {
+          "type": "JSFunction",
+          "value": "function onSearch() {\n  console.log(this.state.formData);\n}"
+        },
+        "onReset": {
+          "type": "JSFunction",
+          "value": "function onReset() {\n  this.setState({\n    formData: {\n      code: '',\n      name: '',\n      sax: '',\n      timer: '',\n      brand: ''\n    }\n  });\n}"
+        },
+        "onValuesChange": {
+          "type": "JSFunction",
+          "value": "function onValuesChange(v, all) {\n  let key = Object.keys(v)[0];\n\n  switch (key) {\n    case \"code\":\n      this.setState({\n        formData: Object.assign({}, this.state.formData, {\n          code: v[key].target.value\n        })\n      });\n      break;\n\n    case \"name\":\n      this.setState({\n        formData: Object.assign({}, this.state.formData, {\n          name: v[key].target.value\n        })\n      });\n      break;\n\n    case \"sex\":\n      console.log(v[key].target.value);\n      this.setState({\n        formData: Object.assign({}, this.state.formData, {\n          sex: v[key].target.value\n        })\n      });\n      break;\n\n    case \"timer\":\n      this.setState({\n        formData: Object.assign({}, this.state.formData, {\n          timer: v[key]\n        })\n      });\n      break;\n\n    case \"brand\":\n      this.setState({\n        formData: Object.assign({}, this.state.formData, {\n          brand: v[key].value\n        })\n      });\n      break;\n\n    case \"category\":\n      this.setState({\n        formData: Object.assign({}, this.state.formData, {\n          category: v[key]\n        })\n      });\n      break;\n\n    case \"date\":\n      this.setState({\n        formData: Object.assign({}, this.state.formData, {\n          date: v[key]\n        })\n      });\n      break;\n\n    case \"time\":\n      this.setState({\n        formData: Object.assign({}, this.state.formData, {\n          time: v[key]\n        })\n      });\n      break;\n  }\n\n  console.log(this.state.formData);\n}"
+        }
+      },
+      "lifeCycles": {},
+      "originCode": "class LowcodeComponent extends Component {\n  \n  // 你可以在这里添加自己的state，如示例中的test\n  state = {\n      formData:{\n        code: '22',\n        name: '44',\n        sex:1,\n        timer:[2],\n        brand:2,\n        category: ['zhejiang', 'hangzhou', 'xihu'],\n        date:new Date(),\n        time: moment('12:08:23', 'HH:mm:ss')\n      },\n      brandList:[\n        {\n          value:1,\n          label:'AAA'\n        },\n        {\n          value: 2,\n          label: 'BBB'\n        },\n        {\n          value: 3,\n          label: 'CCC'\n        },\n        {\n          value: 4,\n          label: 'DDD'\n        },\n      ],\n    timerList: [\n      {\n        value: 1,\n        label: '每天'\n      },\n      {\n        value: 2,\n        label: '每周'\n      },\n      {\n        value: 3,\n        label: '每月'\n      },\n      {\n        value: 4,\n        label: '每年'\n      },\n    ],\n    sexList: [\n      {\n        value: 1,\n        label: '男'\n      },\n      {\n        value: 2,\n        label: '女'\n      },\n    ],\n    options: [\n      {\n        value: 'zhejiang',\n        label: 'Zhejiang',\n        children: [\n          {\n            value: 'hangzhou',\n            label: 'Hangzhou',\n            children: [\n              {\n                value: 'xihu',\n                label: 'West Lake',\n              },\n            ],\n          },\n        ],\n      },\n      {\n        value: 'jiangsu',\n        label: 'Jiangsu',\n        children: [\n          {\n            value: 'nanjing',\n            label: 'Nanjing',\n            children: [\n              {\n                value: 'zhonghuamen',\n                label: 'Zhong Hua Men',\n              },\n            ],\n          },\n        ],\n      },\n    ]\n  }\n  \n  \n  \n  // 你可以在这里编写函数，并且与组件的事件进行绑定，支持JSX语法\n  testFunc() {\n    console.log('test aliLowcode func');\n    return (\n      <div className=\"test-aliLowcode-func\">\n        {this.state.test}\n      </div>\n    );\n  }\n  \n\n\tonSearch(){\n    console.log(this.state.formData)\n\t}\n\n\tonReset(){\n    this.setState({\n      formData: { code: '', name: '', sax: '', timer: '', brand:''}\n    })\n\t}\n\n\n\tonValuesChange(v,all){\n    let key = Object.keys(v)[0]\n\n    switch (key) {\n      case \"code\":\n        this.setState({\n          formData: Object.assign({}, this.state.formData, {\n            code: v[key].target.value,\n          }),\n        });\n        break;\n\n      case \"name\":\n        this.setState({\n          formData: Object.assign({}, this.state.formData, {\n            name: v[key].target.value,\n          }),\n        });\n        break;\n\n      case \"sex\":\n        console.log(v[key].target.value);\n        this.setState({\n          formData: Object.assign({}, this.state.formData, {\n            sex: v[key].target.value,\n          }),\n        });\n        break;\n\n      case \"timer\":\n        this.setState({\n          formData: Object.assign({}, this.state.formData, {\n            timer: v[key],\n          }),\n        });\n        break;\n\n      case \"brand\":\n        this.setState({\n          formData: Object.assign({}, this.state.formData, {\n            brand: v[key].value,\n          }),\n        });\n        break;\n\n      case \"category\":\n        this.setState({\n          formData: Object.assign({}, this.state.formData, {\n            category: v[key],\n          }),\n        });\n        break;\n\n      case \"date\":\n        this.setState({\n          formData: Object.assign({}, this.state.formData, {\n            date: v[key],\n          }),\n        });\n        break;\n\n      case \"time\":\n        this.setState({\n          formData: Object.assign({}, this.state.formData, {\n            time: v[key],\n          }),\n        });\n        break;\n    }\n\n    console.log(this.state.formData)\n  }\n}",
+      "css": "",
+      "hidden": false,
+      "title": "",
+      "isLocked": false,
+      "condition": true,
+      "conditionGroup": "",
+      "children": [
+        {
+          "componentName": "Form",
+          "id": "node_ocl4i7tlv82",
+          "props": {
+            "labelCol": {
+              "span": 6
+            },
+            "wrapperCol": {
+              "span": 14
+            },
+            "onValuesChange": {
+              "type": "JSFunction",
+              "value": "function(){this.onValuesChange.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+            },
+            "onFinish": {
+              "type": "JSFunction",
+              "value": "function(){this.onSearch.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+            },
+            "name": "basic",
+            "colon": false,
+            "hideRequiredMark": false,
+            "labelAlign": "right",
+            "layout": "horizontal",
+            "preserve": false,
+            "scrollToFirstError": false,
+            "size": "middle",
+            "validateMessages": {
+              "required": "'${name}' 不能为空"
+            },
+            "__events": {
+              "eventDataList": [
+                {
+                  "type": "componentEvent",
+                  "name": "onValuesChange",
+                  "relatedEventName": "onValuesChange"
+                },
+                {
+                  "type": "componentEvent",
+                  "name": "onFinish",
+                  "relatedEventName": "onSearch"
+                }
+              ],
+              "eventList": [
+                {
+                  "name": "onFinish",
+                  "template": "onFinish(values,${extParams}){\n// 提交表单且数据验证成功后回调事件\nconsole.log('onFinish',values);}",
+                  "disabled": true
+                },
+                {
+                  "name": "onFinishFailed",
+                  "template": "onFinishFailed({values,errorFields,outOfDate},${extParams}){\n// 提交表单且数据验证失败后回调事件\nconsole.log('onFinishFailed',values, errorFields, outOfDate);}",
+                  "disabled": false
+                },
+                {
+                  "name": "onFieldsChange",
+                  "template": "onFieldsChange(changedFields,allFields,${extParams}){\n// 字段更新时触发回调事件\nconsole.log('onFieldsChange',changedFields,allFields);}",
+                  "disabled": false
+                },
+                {
+                  "name": "onValuesChange",
+                  "template": "onValuesChange(changedValues,allValues,${extParams}){\n// 字段值更新时触发回调事件\nconsole.log('onValuesChange',changedValues,allValues);}",
+                  "disabled": true
+                }
+              ]
+            },
+            "values": {
+              "type": "JSExpression",
+              "value": "this.state.formData"
+            },
+            "validateTrigger": "onChange"
+          },
+          "hidden": false,
+          "title": "",
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": "",
+          "children": [
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocl4i1dxy72",
+              "props": {
+                "label": "code",
+                "name": "code",
+                "labelAlign": "right",
+                "colon": false,
+                "required": true,
+                "initialValue": {
+                  "type": "JSExpression",
+                  "value": "this.state.formData.code",
+                  "mock": ""
+                },
+                "noStyle": false,
+                "valuePropName": "",
+                "requiredobj": {
+                  "required": true,
+                  "message": "code必填啊 "
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                }
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Input",
+                  "id": "node_ocl4i1dxy75",
+                  "props": {
+                    "placeholder": "请输入",
+                    "allowClear": true,
+                    "bordered": true,
+                    "disabled": false,
+                    "maxLength": 10,
+                    "size": "middle",
+                    "value": {
+                      "type": "JSExpression",
+                      "value": "this.state.formData.code"
+                    }
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocl4i1dxy73",
+              "props": {
+                "label": "name",
+                "name": "name",
+                "labelAlign": "right",
+                "colon": false,
+                "required": true,
+                "initialValue": {
+                  "type": "JSExpression",
+                  "value": "this.state.formData.name",
+                  "mock": ""
+                },
+                "noStyle": false,
+                "valuePropName": "",
+                "requiredobj": {
+                  "required": true,
+                  "message": "name有也是必填呀"
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                }
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Input",
+                  "id": "node_ocl4i1dxy74",
+                  "props": {
+                    "placeholder": "请输入",
+                    "allowClear": true,
+                    "bordered": true,
+                    "disabled": false,
+                    "maxLength": 100,
+                    "size": "middle",
+                    "value": {
+                      "type": "JSExpression",
+                      "value": "this.state.formData.name"
+                    }
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocl4i7tlv89",
+              "props": {
+                "label": "性别",
+                "name": "sex",
+                "labelAlign": "right",
+                "colon": false,
+                "required": true,
+                "initialValue": {
+                  "type": "JSExpression",
+                  "value": "this.state.formData.sex",
+                  "mock": ""
+                },
+                "noStyle": false,
+                "valuePropName": "",
+                "requiredobj": {
+                  "required": true,
+                  "message": "必须"
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                }
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Radio.Group",
+                  "id": "node_ocl4i7tlv8c",
+                  "props": {
+                    "options": {
+                      "type": "JSExpression",
+                      "value": "this.state.sexList"
+                    },
+                    "defaultValue": "",
+                    "value": {
+                      "type": "JSExpression",
+                      "value": "this.state.formData.sex",
+                      "mock": ""
+                    },
+                    "disabled": false,
+                    "name": "sex",
+                    "optionType": "default",
+                    "size": "middle",
+                    "buttonStyle": "outline"
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocl4i7tlv8a",
+              "props": {
+                "label": "循环周期",
+                "name": "timer",
+                "labelAlign": "right",
+                "colon": false,
+                "required": true,
+                "initialValue": {
+                  "type": "JSExpression",
+                  "value": "this.state.formData.timer",
+                  "mock": ""
+                },
+                "noStyle": false,
+                "valuePropName": "",
+                "requiredobj": {
+                  "required": true,
+                  "message": ""
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                }
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Checkbox.Group",
+                  "id": "node_ocl4i7tlv8d",
+                  "props": {
+                    "options": {
+                      "type": "JSExpression",
+                      "value": "this.state.timerList"
+                    },
+                    "defaultValue": [],
+                    "value": {
+                      "type": "JSExpression",
+                      "value": "this.state.formData.timer"
+                    },
+                    "disabled": false,
+                    "name": "timer"
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocl4i7tlv8b",
+              "props": {
+                "label": "品牌",
+                "name": "brand",
+                "labelAlign": "right",
+                "colon": false,
+                "required": true,
+                "initialValue": {
+                  "type": "JSExpression",
+                  "value": "this.state.formData.brand",
+                  "mock": ""
+                },
+                "noStyle": false,
+                "valuePropName": "",
+                "requiredobj": {
+                  "required": true,
+                  "message": ""
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                }
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Select",
+                  "id": "node_ocl4i7tlv8e",
+                  "props": {
+                    "style": {
+                      "width": 200
+                    },
+                    "options": {
+                      "type": "JSExpression",
+                      "value": "this.state.brandList"
+                    },
+                    "allowClear": true,
+                    "autoFocus": false,
+                    "defaultActiveFirstOption": false,
+                    "disabled": false,
+                    "labelInValue": true,
+                    "notFoundContent": "",
+                    "placeholder": "",
+                    "showArrow": true,
+                    "showSearch": true,
+                    "size": "middle",
+                    "loading": false,
+                    "bordered": true,
+                    "filterOption": true,
+                    "optionFilterProp": "value",
+                    "tokenSeparators": [],
+                    "mode": "single",
+                    "value": {
+                      "type": "JSExpression",
+                      "value": "this.state.formData.brand"
+                    },
+                    "defaultValue": {
+                      "type": "JSExpression",
+                      "value": "this.state.formData.brand"
+                    }
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocl4m5grjb2",
+              "props": {
+                "label": "分类",
+                "name": "category",
+                "labelAlign": "right",
+                "colon": false,
+                "required": true,
+                "initialValue": {
+                  "type": "JSExpression",
+                  "value": "this.state.formData.category",
+                  "mock": ""
+                },
+                "noStyle": false,
+                "valuePropName": "",
+                "requiredobj": {
+                  "required": true,
+                  "message": "分类"
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                }
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Cascader",
+                  "id": "node_ocl4m5grjb5",
+                  "props": {
+                    "options": {
+                      "type": "JSExpression",
+                      "value": "this.state.options"
+                    },
+                    "defaultValue": {
+                      "type": "JSExpression",
+                      "value": "this.state.formData.category"
+                    },
+                    "value": {
+                      "type": "JSExpression",
+                      "value": "this.state.formData.category"
+                    },
+                    "allowClear": true,
+                    "autoFocus": false,
+                    "bordered": true,
+                    "changeOnSelect": true,
+                    "disabled": false,
+                    "expandTrigger": "click",
+                    "notFoundContent": "",
+                    "placeholder": "",
+                    "popupClassName": "",
+                    "popupPlacement": "bottomLeft",
+                    "popupVisible": false,
+                    "showSearch": true,
+                    "size": "large"
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocl4m5grjb3",
+              "props": {
+                "label": "date",
+                "name": "date",
+                "labelAlign": "right",
+                "colon": false,
+                "required": true,
+                "initialValue": {
+                  "type": "JSExpression",
+                  "value": "this.state.formData.date",
+                  "mock": ""
+                },
+                "noStyle": false,
+                "valuePropName": "",
+                "requiredobj": {
+                  "required": true,
+                  "message": ""
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                }
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "DatePicker",
+                  "id": "node_ocl4m5grjb6",
+                  "props": {
+                    "size": "middle",
+                    "format": "YYYY-MM-DD",
+                    "allowClear": true,
+                    "bordered": true,
+                    "showToday": true,
+                    "autoFocus": false,
+                    "disabled": false,
+                    "inputReadOnly": false,
+                    "showTime": false,
+                    "defaultValue": {
+                      "type": "JSExpression",
+                      "value": "this.state.formData.date"
+                    },
+                    "value": {
+                      "type": "JSExpression",
+                      "value": "this.state.formData.date"
+                    },
+                    "picker": "date",
+                    "placeholder": "选择日期"
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocl4m5grjb4",
+              "props": {
+                "label": "表单项",
+                "name": "time",
+                "labelAlign": "right",
+                "colon": false,
+                "required": true,
+                "initialValue": {
+                  "type": "JSExpression",
+                  "value": "this.state.formData.time",
+                  "mock": ""
+                },
+                "noStyle": false,
+                "valuePropName": "",
+                "requiredobj": {
+                  "required": true,
+                  "message": ""
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                }
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "TimePicker",
+                  "id": "node_ocl4m5grjb7",
+                  "props": {
+                    "allowClear": true,
+                    "autoFocus": false,
+                    "bordered": true,
+                    "clearText": "删除",
+                    "disabled": false,
+                    "format": "",
+                    "hideDisabledOptions": false,
+                    "hourStep": 1,
+                    "inputReadOnly": false,
+                    "minuteStep": 15,
+                    "open": false,
+                    "popupClassName": "",
+                    "secondStep": 10,
+                    "use12Hours": false,
+                    "showNow": false,
+                    "defaultValue": {
+                      "type": "JSExpression",
+                      "value": "this.state.formData.time"
+                    },
+                    "value": {
+                      "type": "JSExpression",
+                      "value": "this.state.formData.time"
+                    }
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Form.Item",
+              "id": "node_ocl4i1dwre4",
+              "props": {
+                "wrapperCol": {
+                  "offset": 6
+                },
+                "name": "",
+                "labelAlign": "right",
+                "colon": false,
+                "required": false,
+                "initialValue": "",
+                "noStyle": false,
+                "valuePropName": "",
+                "requiredobj": {
+                  "required": "",
+                  "message": ""
+                },
+                "typeobj": {
+                  "type": "",
+                  "message": ""
+                },
+                "lenobj": {
+                  "max": "",
+                  "min": "",
+                  "message": ""
+                },
+                "patternobj": {
+                  "pattern": "",
+                  "message": ""
+                }
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Button",
+                  "id": "node_ocl4i1dwre5",
+                  "props": {
+                    "type": "primary",
+                    "children": "提交",
+                    "htmlType": "submit",
+                    "size": "middle",
+                    "shape": "default",
+                    "icon": "",
+                    "block": false,
+                    "danger": false,
+                    "ghost": false,
+                    "disabled": false
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                },
+                {
+                  "componentName": "Button",
+                  "id": "node_ocl4i1dwre6",
+                  "props": {
+                    "style": {
+                      "marginLeft": 20
+                    },
+                    "children": "取消",
+                    "htmlType": "button",
+                    "size": "middle",
+                    "shape": "default",
+                    "icon": {
+                      "type": "JSSlot",
+                      "value": [
+                        {
+                          "componentName": "Icon",
+                          "id": "node_ocl4i1dxy79",
+                          "props": {
+                            "type": "SearchOutlined",
+                            "size": 14
+                          },
+                          "hidden": false,
+                          "title": "",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": ""
+                        }
+                      ]
+                    },
+                    "block": false,
+                    "danger": false,
+                    "ghost": false,
+                    "disabled": false,
+                    "__events": {
+                      "eventDataList": [
+                        {
+                          "type": "componentEvent",
+                          "name": "onClick",
+                          "relatedEventName": "onReset"
+                        }
+                      ],
+                      "eventList": [
+                        {
+                          "name": "onClick",
+                          "template": "onClick(event,${extParams}){\n// 点击按钮时的回调\nconsole.log('onClick', event);}",
+                          "disabled": true
+                        }
+                      ]
+                    },
+                    "onClick": {
+                      "type": "JSFunction",
+                      "value": "function(){this.onReset.apply(this,Array.prototype.slice.call(arguments).concat([])) }"
+                    }
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "i18n": {}
+}
