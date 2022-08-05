@@ -1,0 +1,104 @@
+{
+  "version": "1.0.0",
+  "componentsMap": [
+    {
+      "devMode": "lowCode",
+      "componentName": "Page"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.0.9",
+      "exportName": "Radio",
+      "main": "",
+      "destructuring": true,
+      "subName": "Group",
+      "componentName": "Radio.Group"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.0.9",
+      "exportName": "Input",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Input"
+    },
+    {
+      "package": "@alilc/antd-lowcode-materials",
+      "version": "1.0.9",
+      "exportName": "Checkbox",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Checkbox"
+    }
+  ],
+  "componentsTree": [
+    {
+      "componentName": "Page",
+      "id": "node_dockcviv8fo1",
+      "props": {},
+      "fileName": "sample",
+      "children": [
+        {
+          "componentName": "Radio.Group",
+          "id": "node_ocl5t1a1qc4",
+          "props": {
+            "options": [
+              {
+                "label": "A",
+                "value": "A"
+              },
+              {
+                "label": "B",
+                "value": "B"
+              },
+              {
+                "label": "C",
+                "value": "C"
+              }
+            ],
+            "disabled": false,
+            "optionType": "default"
+          },
+          "hidden": false,
+          "title": "",
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": ""
+        },
+        {
+          "componentName": "Input",
+          "id": "node_ocl5t1a1qc5",
+          "props": {
+            "placeholder": "请输入",
+            "bordered": true,
+            "disabled": false,
+            "size": "middle"
+          },
+          "hidden": false,
+          "title": "",
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": ""
+        },
+        {
+          "componentName": "Checkbox",
+          "id": "node_ocl5t1a1qcc",
+          "props": {
+            "children": "Checkbox",
+            "autoFocus": false,
+            "checked": false,
+            "defaultChecked": false,
+            "disabled": false,
+            "indeterminate": false
+          },
+          "hidden": false,
+          "title": "",
+          "isLocked": false,
+          "condition": false,
+          "conditionGroup": ""
+        }
+      ]
+    }
+  ],
+  "i18n": {}
+}

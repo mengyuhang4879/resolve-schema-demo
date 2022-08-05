@@ -1,62 +1,78 @@
-import React, { useState } from 'react';
-import { Loading } from '@alifd/next';
-import { buildComponents, assetBundle, AssetLevel, AssetLoader } from '@alilc/lowcode-utils';
-import ReactRenderer from '@alilc/lowcode-react-renderer';
-import { injectComponents } from '@alilc/lowcode-plugin-inject';
+import React from 'react'
+import { Loading } from '@alifd/next'
+import {
+  buildComponents,
+  assetBundle,
+  AssetLevel,
+  AssetLoader,
+} from '@alilc/lowcode-utils'
+import ReactRenderer from '@alilc/lowcode-react-renderer'
+import { injectComponents } from '@alilc/lowcode-plugin-inject'
+import { createFetchHandler } from '@alilc/lowcode-datasource-fetch-handler'
 
-const LowCodeAnalysis = () => {
-  const [data, setData] = useState({});
+class LowCodeAnalysis extends React.Component {
+  state = {
+    data: {},
+  }
 
-  async function init() {
-    // 渲染前置处理，初始化项目 schema 和资产包为渲染模块所需的 schema prop 和 components prop
-    const packages = JSON.parse(window.localStorage.getItem('packages') || '');
-    const projectSchema = JSON.parse(window.localStorage.getItem('projectSchema') || '');
-    const { componentsMap: componentsMapArray, componentsTree } = projectSchema;
-    const componentsMap = {};
+  init = async () => {
+    const { projectSchema, packages } = this.props
+    const { componentsMap: componentsMapArray, componentsTree } = projectSchema
+    const componentsMap = {}
     componentsMapArray.forEach((component) => {
-      componentsMap[component.componentName] = component;
-    });
-    const schema = componentsTree[0];
+      componentsMap[component.componentName] = component
+    })
+    const schema = componentsTree[0]
 
-    const libraryMap = {};
-    const libraryAsset = [];
+    const libraryMap = {}
+    const libraryAsset = []
     packages.forEach(({ package: _package, library, urls, renderUrls }) => {
-      libraryMap[_package] = library;
+      libraryMap[_package] = library
       if (renderUrls) {
-        libraryAsset.push(renderUrls);
+        libraryAsset.push(renderUrls)
       } else if (urls) {
-        libraryAsset.push(urls);
+        libraryAsset.push(urls)
       }
-    });
+    })
 
-    const vendors = [assetBundle(libraryAsset, AssetLevel.Library)];
+    const vendors = [assetBundle(libraryAsset, AssetLevel.Library)]
 
-    const assetLoader = new AssetLoader();
-    await assetLoader.load(libraryAsset);
-    // const components = await injectComponents(buildComponents(libraryMap, componentsMap));
+    // TODO asset may cause pollution
+    const assetLoader = new AssetLoader()
+    await assetLoader.load(libraryAsset)
+    const components = await injectComponents(
+      buildComponents(libraryMap, componentsMap)
+    )
 
-    setData({
-      schema,
-      components,
-    });
+    this.setState({
+      data: {
+        schema,
+        components,
+      },
+    })
   }
+  render () {
+    const { schema, components } = this.state.data
 
-  const { schema, components } = data;
+    if (!schema || !components) {
+      this.init()
+      return <Loading fullScreen />
+    }
 
-  if (!schema || !components) {
-    init();
-    return <Loading fullScreen />;
-  }
-
-  return (
+    return (
       <div className="lowcode-plugin-sample-preview">
         <ReactRenderer
-            className="lowcode-plugin-sample-preview-content"
-            schema={schema}
-            components={components}
+          className="lowcode-plugin-sample-preview-content"
+          schema={schema}
+          components={components}
+          appHelper={{
+            requestHandlersMap: {
+              fetch: createFetchHandler(),
+            },
+          }}
         />
       </div>
-  );
-};
-
+    )
+  }
+}
 export default LowCodeAnalysis
