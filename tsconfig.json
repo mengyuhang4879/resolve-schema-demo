@@ -1,10 +1,475 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
+  "schemaType": "superform",
+  "schemaVersion": "5.0",
+  "pages": [
+    {
+      "utils": [
+        {
+          "name": "legaoBuiltin",
+          "type": "npm",
+          "content": {
+            "package": "@ali/vu-legao-builtin",
+            "version": "3.0.0",
+            "exportName": "legaoBuiltin"
+          }
+        },
+        {
+          "name": "yidaPlugin",
+          "type": "npm",
+          "content": {
+            "package": "@ali/vu-yida-plugin",
+            "version": "1.1.0",
+            "exportName": "yidaPlugin"
+          }
+        }
+      ],
+      "componentsMap": [
+        {
+          "package": "@ali/vc-deep-yida",
+          "version": "1.5.169",
+          "componentName": "RootHeader"
+        },
+        {
+          "package": "@ali/vc-deep-yida",
+          "version": "1.5.169",
+          "componentName": "TextField"
+        },
+        {
+          "package": "@ali/vc-deep-yida",
+          "version": "1.5.169",
+          "componentName": "NumberField"
+        },
+        {
+          "package": "@ali/vc-deep-yida",
+          "version": "1.5.169",
+          "componentName": "CheckboxField"
+        },
+        {
+          "package": "@ali/vc-deep-yida",
+          "version": "1.5.169",
+          "componentName": "FormContainer"
+        },
+        {
+          "package": "@ali/vc-deep-yida",
+          "version": "1.5.169",
+          "componentName": "RootContent"
+        },
+        {
+          "package": "@ali/vc-deep-yida",
+          "version": "1.5.169",
+          "componentName": "FooterYida"
+        },
+        {
+          "package": "@ali/vc-deep-yida",
+          "version": "1.5.169",
+          "componentName": "RootFooter"
+        },
+        {
+          "package": "@ali/vc-deep-yida",
+          "version": "1.5.169",
+          "componentName": "Page"
+        }
+      ],
+      "componentsTree": [
+        {
+          "componentName": "Page",
+          "id": "node_ocl6pqzbcp1",
+          "props": {
+            "titleDesc": {
+              "use": "zh_CN",
+              "en_US": "title",
+              "zh_CN": "标题描述",
+              "type": "i18n"
+            },
+            "pageStyle": {
+              "backgroundColor": "#f2f3f5"
+            },
+            "contentMargin": "16",
+            "contentPadding": "24",
+            "contentPaddingMobile": "0",
+            "titleBg": "https://gw.alicdn.com/imgextra/i4/O1CN01CPrntJ1fDDvlorFOL_!!6000000003972-2-tps-2000-500.png",
+            "sizePc": "medium",
+            "labelAlignPc": "top",
+            "contentMarginMobile": "12",
+            "className": "page_l6pqzl6v",
+            "labelWidthPc": "130px",
+            "contentBgColor": "white",
+            "titleName": {
+              "use": "zh_CN",
+              "en_US": "title",
+              "zh_CN": "标题名称",
+              "type": "i18n"
+            },
+            "showTitle": true,
+            "templateVersion": "1.0.0",
+            "contentBgColorMobile": "white",
+            "labelWeightMobile": "normal",
+            "labelWidthMobile": "80px",
+            "labelWeightPc": "normal",
+            "labelAlignMobile": "top"
+          },
+          "css": "body{background-color:#f2f3f5}",
+          "methods": {
+            "__initMethods__": {
+              "type": "js",
+              "source": "function+(exports,+module)+{+/*set+actions+code+here*/+}",
+              "compiled": "function+(exports,+module)+{+/*set+actions+code+here*/+}"
+            }
+          },
+          "dataSource": {
+            "offline": [],
+            "globalConfig": {
+              "fit": {
+                "compiled": "'use+strict';\n\nvar+__preParser__+=+function+fit(response)+{\n++var+content+=+response.content+!==+undefined+?+response.content+:+response;\n++var+error+=+{\n++++message:+response.errorMsg+||+response.errors+&&+response.errors[0]+&&+response.errors[0].msg+||+response.content+||+'远程数据源请求出错，success+is+false'\n++};\n++var+success+=+true;\n++if+(response.success+!==+undefined)+{\n++++success+=+response.success;\n++}+else+if+(response.hasError+!==+undefined)+{\n++++success+=+!response.hasError;\n++}\n++return+{\n++++content:+content,\n++++success:+success,\n++++error:+error\n++};\n};",
+                "source": "function+fit(response)+{\r\n++const+content+=+(response.content+!==+undefined)+?+response.content+:+response;\r\n++const+error+=+{\r\n++++message:+response.errorMsg+||\r\n++++++(response.errors+&&+response.errors[0]+&&+response.errors[0].msg)+||\r\n++++++response.content+||+'远程数据源请求出错，success+is+false',\r\n++};\r\n++let+success+=+true;\r\n++if+(response.success+!==+undefined)+{\r\n++++success+=+response.success;\r\n++}+else+if+(response.hasError+!==+undefined)+{\r\n++++success+=+!response.hasError;\r\n++}\r\n++return+{\r\n++++content,\r\n++++success,\r\n++++error,\r\n++};\r\n}",
+                "type": "js",
+                "error": {}
+              }
+            },
+            "online": [],
+            "list": [],
+            "sync": true
+          },
+          "lifeCycles": {
+            "constructor": {
+              "type": "js",
+              "compiled": "function+constructor()+{\nvar+module+=+{+exports:+{}+};\nvar+_this+=+this;\nthis.__initMethods__(module.exports,+module);\nObject.keys(module.exports).forEach(function(item)+{\n++if(typeof+module.exports[item]+===+'function'){\n++++_this[item]+=+module.exports[item];\n++}\n});\n\n}",
+              "source": "function+constructor()+{\nvar+module+=+{+exports:+{}+};\nvar+_this+=+this;\nthis.__initMethods__(module.exports,+module);\nObject.keys(module.exports).forEach(function(item)+{\n++if(typeof+module.exports[item]+===+'function'){\n++++_this[item]+=+module.exports[item];\n++}\n});\n\n}"
+            },
+            "componentDidMount": {
+              "name": "didMount",
+              "id": "didMount",
+              "params": {},
+              "type": "actionRef"
+            }
+          },
+          "children": [
+            {
+              "componentName": "RootHeader",
+              "id": "node_ocl6pqzbcp2",
+              "props": {}
+            },
+            {
+              "componentName": "RootContent",
+              "id": "node_ocl6pqzbcp3",
+              "props": {},
+              "children": [
+                {
+                  "componentName": "FormContainer",
+                  "id": "node_ocl6pqzbcp4",
+                  "props": {
+                    "beforeSubmit": false,
+                    "submitProps": {
+                      "text": {
+                        "en_US": "Submit",
+                        "zh_CN": "提交",
+                        "type": "i18n"
+                      }
+                    },
+                    "labelAlign": "top",
+                    "columns": 1,
+                    "fieldId": "formContainer_l6pqzbr5",
+                    "afterSubmit": false
+                  },
+                  "children": [
+                    {
+                      "componentName": "TextField",
+                      "id": "node_ocl6pqzbcp7",
+                      "props": {
+                        "__useMediator": "value",
+                        "hasClear": true,
+                        "validationType": "text",
+                        "__gridSpan": 1,
+                        "linkage": "",
+                        "tips": {
+                          "en_US": "",
+                          "zh_CN": "",
+                          "type": "i18n"
+                        },
+                        "valueType": "custom",
+                        "labelTextAlign": "left",
+                        "placeholder": {
+                          "use": "zh_CN",
+                          "en_US": "Please+enter",
+                          "zh_CN": "请输入",
+                          "type": "i18n"
+                        },
+                        "behavior": "NORMAL",
+                        "value": {
+                          "use": "zh_CN",
+                          "en_US": "",
+                          "zh_CN": "",
+                          "type": "i18n"
+                        },
+                        "validation": [],
+                        "hasLimitHint": false,
+                        "fieldId": "textField_l6pqzh1w",
+                        "autoHeight": false,
+                        "visibility": [
+                          "PC",
+                          "MOBILE"
+                        ],
+                        "dataEntryMode": false,
+                        "submittable": "DEFAULT",
+                        "label": {
+                          "use": "zh_CN",
+                          "en_US": "TextField",
+                          "zh_CN": "单行文本",
+                          "type": "i18n"
+                        },
+                        "__category__": "form",
+                        "rows": 4,
+                        "labelColSpan": 4,
+                        "scanCode": {
+                          "enabled": false,
+                          "type": "all",
+                          "editable": true
+                        },
+                        "complexValue": {
+                          "complexType": "custom",
+                          "formula": "",
+                          "value": {
+                            "en_US": "",
+                            "zh_CN": "",
+                            "type": "i18n"
+                          }
+                        },
+                        "labelAlign": "top",
+                        "formula": "",
+                        "maxLength": 200,
+                        "size": "medium"
+                      },
+                      "condition": true
+                    },
+                    {
+                      "componentName": "NumberField",
+                      "id": "node_ocl6pqzbcp8",
+                      "props": {
+                        "__useMediator": "value",
+                        "precision": 0,
+                        "__gridSpan": 1,
+                        "linkage": "",
+                        "innerAfter": {
+                          "use": "zh_CN",
+                          "en_US": "",
+                          "zh_CN": "",
+                          "type": "i18n"
+                        },
+                        "tips": {
+                          "en_US": "",
+                          "zh_CN": "",
+                          "type": "i18n"
+                        },
+                        "thousandsSeparators": false,
+                        "valueType": "custom",
+                        "labelTextAlign": "left",
+                        "placeholder": {
+                          "use": "zh_CN",
+                          "en_US": "Please+enter+a+number",
+                          "zh_CN": "请输入数字",
+                          "type": "i18n"
+                        },
+                        "behavior": "NORMAL",
+                        "value": "",
+                        "validation": [
+                          {
+                            "param": "25",
+                            "type": "maxLength"
+                          }
+                        ],
+                        "fieldId": "numberField_l6pqzh1x",
+                        "visibility": [
+                          "PC",
+                          "MOBILE"
+                        ],
+                        "dataEntryMode": false,
+                        "submittable": "DEFAULT",
+                        "labelColOffset": 0,
+                        "label": {
+                          "use": "zh_CN",
+                          "en_US": "NumberField",
+                          "zh_CN": "数值",
+                          "type": "i18n"
+                        },
+                        "__category__": "form",
+                        "labelColSpan": 4,
+                        "wrapperColSpan": 0,
+                        "wrapperColOffset": 0,
+                        "complexValue": {
+                          "complexType": "custom",
+                          "formula": ""
+                        },
+                        "labelAlign": "top",
+                        "formula": "",
+                        "step": 1,
+                        "size": "medium"
+                      },
+                      "condition": true
+                    },
+                    {
+                      "componentName": "CheckboxField",
+                      "id": "node_ocl6pqzbcp9",
+                      "props": {
+                        "itemDirection": "hoz",
+                        "__useMediator": "value",
+                        "visibility": [
+                          "PC",
+                          "MOBILE"
+                        ],
+                        "dataEntryMode": false,
+                        "dataSourceLinkage": "",
+                        "submittable": "DEFAULT",
+                        "isUseDataSourceColor": false,
+                        "label": {
+                          "use": "zh_CN",
+                          "en_US": "CheckboxField",
+                          "zh_CN": "复选",
+                          "type": "i18n"
+                        },
+                        "__gridSpan": 1,
+                        "__category__": "form",
+                        "labelColSpan": 4,
+                        "tips": {
+                          "en_US": "",
+                          "zh_CN": "",
+                          "type": "i18n"
+                        },
+                        "labelAlign": "top",
+                        "reusePrivilege": false,
+                        "labelTextAlign": "left",
+                        "behavior": "NORMAL",
+                        "value": [],
+                        "defaultDataSource": {
+                          "complexType": "custom",
+                          "options": [
+                            {
+                              "defaultChecked": false,
+                              "disable": false,
+                              "text": {
+                                "en_US": "Option+1",
+                                "zh_CN": "选项一",
+                                "type": "i18n"
+                              },
+                              "value": "选项一",
+                              "sid": "serial_khe7yak4"
+                            },
+                            {
+                              "defaultChecked": false,
+                              "disable": false,
+                              "text": {
+                                "en_US": "Option+2",
+                                "zh_CN": "选项二",
+                                "type": "i18n"
+                              },
+                              "value": "选项二",
+                              "sid": "serial_khe7yak5"
+                            },
+                            {
+                              "defaultChecked": false,
+                              "disable": false,
+                              "text": {
+                                "en_US": "Option+3",
+                                "zh_CN": "选项三",
+                                "type": "i18n"
+                              },
+                              "value": "选项三",
+                              "sid": "serial_khe7yak6"
+                            }
+                          ],
+                          "formula": "",
+                          "url": "",
+                          "searchConfig": {
+                            "afterFetch": "",
+                            "type": "JSONP",
+                            "beforeFetch": "",
+                            "url": ""
+                          }
+                        },
+                        "dataSource": [
+                          {
+                            "defaultChecked": false,
+                            "disable": false,
+                            "text": {
+                              "en_US": "Option+1",
+                              "zh_CN": "选项一",
+                              "type": "i18n"
+                            },
+                            "value": "选项一",
+                            "sid": "serial_khe7yak4"
+                          },
+                          {
+                            "defaultChecked": false,
+                            "disable": false,
+                            "text": {
+                              "en_US": "Option+2",
+                              "zh_CN": "选项二",
+                              "type": "i18n"
+                            },
+                            "value": "选项二",
+                            "sid": "serial_khe7yak5"
+                          },
+                          {
+                            "defaultChecked": false,
+                            "disable": false,
+                            "text": {
+                              "en_US": "Option+3",
+                              "zh_CN": "选项三",
+                              "type": "i18n"
+                            },
+                            "value": "选项三",
+                            "sid": "serial_khe7yak6"
+                          }
+                        ],
+                        "dataSourceType": "custom",
+                        "validation": [],
+                        "searchConfig": {
+                          "dataType": "jsonp",
+                          "url": "",
+                          "beforeFetch": "function+willFetch(params)+{\n++return+params;\n}",
+                          "afterFetch": "function+didFetch(content)+{\n++return+content;\n}"
+                        },
+                        "fieldId": "checkboxField_l6pqzh1y",
+                        "size": "medium"
+                      },
+                      "condition": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "componentName": "RootFooter",
+              "id": "node_ocl6pqzbcp5",
+              "props": {},
+              "children": [
+                {
+                  "componentName": "FooterYida",
+                  "id": "node_ocl6pqzbcp6",
+                  "props": {}
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "FORM-4V966QC1LRX2NE9HA6FYR8RUBJXO3EU9ZQP6LS",
+      "connectComponent": []
+    }
+  ],
+  "actions": {
+    "module": {
+      "compiled": "\"use+strict\";\n\nexports.__esModule+=+true;\nexports.didMount+=+didMount;\n/**\n*+尊敬的用户，你好：页面+JS+面板是高阶用法，一般不建议普通用户使用，如需使用，请确定你具备研发背景，能够自我排查问题。当然，你也可以咨询身边的技术顾问或者联系宜搭平台的技术支持获得服务（可能收费）。\n*+我们可以用+JS+面板来开发一些定制度高功能，比如：调用阿里云接口用来做图像识别、上报用户使用数据（如加载完成打点）等等。\n*+你可以点击面板上方的+「使用帮助」了解。\n*/\n\n//+当页面渲染完毕后马上调用下面的函数，这个函数是在当前页面+-+设置+-+生命周期+-+页面加载完成时中被关联的。\nfunction+didMount()+{\n++console.log(\"\\u300C\\u9875\\u9762+JS\\u300D\\uFF1A\\u5F53\\u524D\\u9875\\u9762\\u5730\\u5740+\"+++location.href);\n++//+console.log(`「页面+JS」：当前页面+id+参数为+${this.state.urlParams.id}`);\n++//+更多+this+相关+API+请参考：https://www.yuque.com/yida/support/ocmxyv#OCEXd\n++//+document.title+=+window.loginUser.userName+++'+|+宜搭';\n}\n",
+      "source": "/**\n*+尊敬的用户，你好：页面+JS+面板是高阶用法，一般不建议普通用户使用，如需使用，请确定你具备研发背景，能够自我排查问题。当然，你也可以咨询身边的技术顾问或者联系宜搭平台的技术支持获得服务（可能收费）。\n*+我们可以用+JS+面板来开发一些定制度高功能，比如：调用阿里云接口用来做图像识别、上报用户使用数据（如加载完成打点）等等。\n*+你可以点击面板上方的+「使用帮助」了解。\n*/\n\n//+当页面渲染完毕后马上调用下面的函数，这个函数是在当前页面+-+设置+-+生命周期+-+页面加载完成时中被关联的。\nexport+function+didMount()+{\n++console.log(`「页面+JS」：当前页面地址+${location.href}`);\n++//+console.log(`「页面+JS」：当前页面+id+参数为+${this.state.urlParams.id}`);\n++//+更多+this+相关+API+请参考：https://www.yuque.com/yida/support/ocmxyv#OCEXd\n++//+document.title+=+window.loginUser.userName+++'+|+宜搭';\n}"
+    },
+    "type": "FUNCTION",
+    "list": [
+      {
+        "id": "didMount",
+        "title": "didMount"
+      }
+    ]
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "config": {
+    "connectComponent": []
+  }
 }

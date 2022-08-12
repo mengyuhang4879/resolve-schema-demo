@@ -1,5 +1,6 @@
 import React from 'react'
-import Schema from './Schema'
+import schema from './Schema'
+import authStatus from './authStatus'
 import Packages from './Packages'
 import LowCodeAnalysis from '../components/LowCodeAnalysis'
 import './index.css'
@@ -7,39 +8,14 @@ import './index.css'
 class LowCode extends React.Component {
     state = {
         //在流程设置也买你设置的权限
-        authStatus: [
-            {
-                "componentName": "Input",
-                "fieldBehavior": "NORMAL",
-                "id": "node_ocl6a72gu28",
-            },
-            {
-                "componentName": "Radio.Group",
-                "fieldBehavior": "DISABLED",
-                "id": "node_ocl6a72gu29",
-            },
-            {
-                "componentName": "Button",
-                "fieldBehavior": "HIDDEN",
-                "id": "node_ocl6a72gu2a",
-            },
-            {
-                "componentName": "Select",
-                "fieldBehavior": "DISABLED",
-                "id": "node_ocl6a72gu2g",
-            }
-        ],
+        authStatus,
         // 表单设计中拖拽的页面
-        schema: Schema
+        schema
     }
 
     getStatus = (componentItem, status) => {
-        if (status === 'DISABLED') {
-            componentItem.props.disabled = true
-        }
-        if (status === 'HIDDEN') {
-            componentItem.condition = false
-        }
+        if (status === 'READONLY') componentItem.props.disabled = true
+        if (status === 'HIDDEN') componentItem.condition = false
     }
 
     //递归解析schema

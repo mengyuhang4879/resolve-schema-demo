@@ -1,0 +1,335 @@
+[
+  {
+    "id": "0",
+    "fieldName": "全选"
+  },
+  {
+    "componentName": "Input",
+    "id": "node_ocl6a72gu28",
+    "props": {
+      "placeholder": "请输入",
+      "bordered": true,
+      "disabled": false,
+      "size": "middle"
+    },
+    "hidden": false,
+    "title": "",
+    "isLocked": false,
+    "condition": true,
+    "conditionGroup": "",
+    "fieldName": "Input",
+    "fieldBehavior": "NORMAL"
+  },
+  {
+    "componentName": "Radio.Group",
+    "id": "node_ocl6a72gu29",
+    "props": {
+      "options": [
+        {
+          "label": "A",
+          "value": "A"
+        },
+        {
+          "label": "B",
+          "value": "B"
+        },
+        {
+          "label": "C",
+          "value": "C"
+        }
+      ],
+      "disabled": false,
+      "optionType": "default"
+    },
+    "hidden": false,
+    "title": "",
+    "isLocked": false,
+    "condition": true,
+    "conditionGroup": "",
+    "fieldName": "Radio.Group",
+    "fieldBehavior": "READONLY"
+  },
+  {
+    "componentName": "Button",
+    "id": "node_ocl6a72gu2a",
+    "props": {
+      "type": "primary",
+      "children": "主按钮",
+      "htmlType": "button",
+      "size": "middle",
+      "shape": "default",
+      "icon": {
+        "type": "JSSlot",
+        "value": [
+          {
+            "componentName": "Icon",
+            "id": "node_ocl6a72gu2c",
+            "props": {
+              "type": "SmileOutlined",
+              "size": 20,
+              "rotate": 0,
+              "spin": false
+            },
+            "hidden": false,
+            "title": "",
+            "isLocked": false,
+            "condition": true,
+            "conditionGroup": ""
+          }
+        ]
+      },
+      "block": false,
+      "danger": false,
+      "ghost": false,
+      "disabled": false
+    },
+    "hidden": false,
+    "title": "",
+    "isLocked": false,
+    "condition": true,
+    "conditionGroup": "",
+    "fieldName": "主按钮",
+    "fieldBehavior": "NORMAL"
+  },
+  {
+    "componentName": "Select",
+    "id": "node_ocl6a72gu2g",
+    "props": {
+      "style": {
+        "width": 200
+      },
+      "options": [
+        {
+          "label": "A",
+          "value": "A"
+        },
+        {
+          "label": "B",
+          "value": "B"
+        },
+        {
+          "label": "C",
+          "value": "C"
+        }
+      ],
+      "allowClear": false,
+      "autoFocus": false,
+      "defaultActiveFirstOption": true,
+      "disabled": false,
+      "labelInValue": false,
+      "showSearch": false,
+      "size": "middle",
+      "loading": false,
+      "bordered": true,
+      "filterOption": true,
+      "optionFilterProp": "value",
+      "tokenSeparators": []
+    },
+    "hidden": false,
+    "title": "",
+    "isLocked": false,
+    "condition": {
+      "type": "JSExpression",
+      "value": "this.state.text",
+      "mock": true
+    },
+    "conditionGroup": "",
+    "fieldName": "Select",
+    "fieldBehavior": "HIDDEN"
+  },
+  {
+    "componentName": "InputNumber",
+    "id": "node_ocl6og3ll07",
+    "props": {
+      "placeholder": "请输入",
+      "autoFocus": false,
+      "disabled": false,
+      "controls": true,
+      "bordered": true,
+      "size": "middle"
+    },
+    "hidden": false,
+    "title": "",
+    "isLocked": false,
+    "condition": true,
+    "conditionGroup": "",
+    "fieldName": "非Form表单input",
+    "fieldBehavior": "READONLY"
+  },
+  {
+    "componentName": "Select",
+    "id": "node_ocl6og3ll09",
+    "props": {
+      "style": {
+        "width": 200
+      },
+      "options": [
+        {
+          "label": "A",
+          "value": "A"
+        },
+        {
+          "label": "B",
+          "value": "B"
+        },
+        {
+          "label": "C",
+          "value": "C"
+        }
+      ],
+      "allowClear": false,
+      "autoFocus": false,
+      "defaultActiveFirstOption": true,
+      "disabled": false,
+      "labelInValue": false,
+      "showSearch": false,
+      "size": "middle",
+      "loading": false,
+      "bordered": true,
+      "optionFilterProp": "value",
+      "tokenSeparators": []
+    },
+    "hidden": false,
+    "title": "",
+    "isLocked": false,
+    "condition": true,
+    "conditionGroup": "",
+    "fieldName": "非Form表单Select",
+    "fieldBehavior": "NORMAL"
+  },
+  {
+    "componentName": "Input",
+    "id": "node_ocl6og3ll0c",
+    "props": {
+      "placeholder": "请输入",
+      "bordered": true,
+      "disabled": false,
+      "size": "middle",
+      "style": {
+        "width": "200px"
+      }
+    },
+    "hidden": false,
+    "title": "",
+    "isLocked": false,
+    "condition": true,
+    "conditionGroup": "",
+    "fieldName": "表单input1",
+    "fieldBehavior": "HIDDEN"
+  },
+  {
+    "componentName": "Input.TextArea",
+    "id": "node_ocl6og3ll0i",
+    "props": {
+      "autoSize": {
+        "minRows": 3,
+        "maxRows": 3
+      },
+      "placeholder": "请输入",
+      "bordered": true,
+      "disabled": false,
+      "showCount": false,
+      "size": "middle"
+    },
+    "hidden": false,
+    "title": "",
+    "isLocked": false,
+    "condition": true,
+    "conditionGroup": "",
+    "fieldName": "表单富文本",
+    "fieldBehavior": "NORMAL"
+  },
+  {
+    "componentName": "Select",
+    "id": "node_ocl6psh2exf",
+    "props": {
+      "style": {
+        "width": 200
+      },
+      "options": [
+        {
+          "label": "A",
+          "value": "A"
+        },
+        {
+          "label": "B",
+          "value": "B"
+        },
+        {
+          "label": "C",
+          "value": "C"
+        }
+      ],
+      "allowClear": false,
+      "autoFocus": false,
+      "defaultActiveFirstOption": true,
+      "disabled": false,
+      "labelInValue": false,
+      "showSearch": false,
+      "size": "middle",
+      "loading": false,
+      "bordered": true,
+      "filterOption": true,
+      "optionFilterProp": "value",
+      "tokenSeparators": []
+    },
+    "hidden": false,
+    "title": "",
+    "isLocked": false,
+    "condition": true,
+    "conditionGroup": "",
+    "fieldName": "表单下拉",
+    "fieldBehavior": "READONLY"
+  },
+  {
+    "componentName": "Switch",
+    "id": "node_ocl6psh2exl",
+    "props": {
+      "defaultChecked": false,
+      "autoFocus": false,
+      "disabled": false,
+      "loading": false,
+      "size": "default"
+    },
+    "hidden": false,
+    "title": "",
+    "isLocked": false,
+    "condition": true,
+    "conditionGroup": "",
+    "fieldName": "表单开关",
+    "fieldBehavior": "READONLY"
+  },
+  {
+    "componentName": "Button",
+    "id": "node_ocl6og3ll0w",
+    "props": {
+      "type": "primary",
+      "children": "提交",
+      "htmlType": "submit"
+    },
+    "hidden": false,
+    "title": "",
+    "isLocked": false,
+    "condition": true,
+    "conditionGroup": "",
+    "fieldName": "提交",
+    "fieldBehavior": "NORMAL"
+  },
+  {
+    "componentName": "Button",
+    "id": "node_ocl6og3ll0x",
+    "props": {
+      "style": {
+        "marginLeft": 20
+      },
+      "children": "取消"
+    },
+    "hidden": false,
+    "title": "",
+    "isLocked": false,
+    "condition": true,
+    "conditionGroup": "",
+    "fieldName": "取消",
+    "fieldBehavior": "NORMAL"
+  }
+]

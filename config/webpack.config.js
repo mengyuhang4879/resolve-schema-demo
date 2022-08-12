@@ -750,7 +750,7 @@ module.exports = function (webpackEnv) {
         }),
     ].filter(Boolean),
     externals:{
-      // "@alilc/lowcode-engine":"var window.AliLowCodeEngine"
+      "@alilc/lowcode-engine":"var window.AliLowCodeEngine"
     },
     // Turn off performance processing because we utilize
     // our own hints via the FileSizeReporter
